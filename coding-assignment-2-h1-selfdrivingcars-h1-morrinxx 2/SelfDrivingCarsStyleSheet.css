@@ -1,0 +1,36 @@
+body{
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+table, th, td {
+  border:  1px solid black;
+}
+.googleCar{
+}
+.teslaPage{
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+  background-color: #fafafa;
+  color: #6e6a6e;
+}
+.teslaPage > h1{
+  color: blue;
+}
+.tesla{
+  background-image: url("models.jpg");
+}
+
+.firebird{
+  color: #ff5500;
+}
+
+}
+h1 {
+  text-align: center;
+  text-decoration-color: #00ff00;
+}
