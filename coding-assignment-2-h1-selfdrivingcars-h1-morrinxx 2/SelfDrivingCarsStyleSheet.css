@@ -5,32 +5,26 @@ body{
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
-  background-size:cover;
-}
-table, th, td {
-  border:  1px solid black;
-}
-.googleCar{
-}
-.teslaPage{
+  background-size: cover;
   text-align: center;
   font-family: Helvetica,Arial,sans-serif;
   background-color: #fafafa;
   color: #6e6a6e;
-}
-.teslaPage > h1{
-  color: blue;
-}
-.tesla{
-  background-image: url("models.jpg");
-}
-
-.firebird{
-  color: #ff5500;
-}
 
 }
-h1 {
-  text-align: center;
-  text-decoration-color: #00ff00;
+table, th, td {
+  border:  1px solid black;
+}
+
+h1{
+  font-size: 69px;
+  color: black;
+}
+h2{
+  color: black;
+  font-size: 40px;
+}
+p{
+  color: grey;
+  font-size: 18px;
 }
