@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>transition</title>
+    <link rel="stylesheet" href="transitionStyle.css">
+    <script src="transitionJavaScript.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <section>
+    <h2>JavaScript Functions</h2>
+
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+
+<script>
+function move() {
+  var pic = "stopSign.png";
+    for (let i = 0; i < 100; i++) {
+      pic.style.heigth = '100px';
+      pic.style.width = '69 * (i/5)';
+    }
+}
+document.getElementById("demo").innerHTML = move();
+</script>
+  </section>
+  </body>
+</html>
