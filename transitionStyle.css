@@ -1,11 +1,13 @@
-div {
-  width: 60px;
-  height: 60px;
-  background-color: skyblue;
+div img {
+    position: relative;
+    animation: myfirst 5s;
+    animation-iteration-count: 1;
+    width:69px;
+    height: 88px;
 }
 
-.moved {
-  /* Equivalent to perspective(500px) translateX(10px) */
-  transform: translate(65px, 88px);
-  background-color: pink;
+
+@keyframes myfirst {
+    0%   { left: 0px; top: 0px; width: 69px; height: 88px;}
+    100% { left: 2000px; top: 100px; width: 569px; height: 588px;}
 }
