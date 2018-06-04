@@ -1,0 +1,19 @@
+div img {
+    position: relative;
+    width:69px;
+    height: 88px;
+}
+
+.animate{
+  animation: myfirst 5s;
+  animation-iteration-count: 1;
+}
+
+.break{
+
+}
+
+@keyframes myfirst {
+    0%   { left: 0px; top: 0px; width: 69px; height: 88px;}
+    100% { left: 2000px; top: 100px; width: 569px; height: 588px;}
+}
