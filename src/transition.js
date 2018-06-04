@@ -15,18 +15,9 @@ window.onload = function(){
     animatedImage.setAttribute("src", images[nextImage]);
     nextImage = Math.floor(Math.random() * 10 / 2);
     animatedImage.classList.add("animate");
-    console.log("animation started");
-    // for (let i = 0; i < images.length; i++) {
-    //   let currentImage = document.getElementsByTagName('img')[0];
-    //   currentImage.classList.add("animate");
-    //   currentImage.setAttribute('src', images[i]);
-    // }
   }
-  animatedImage.onanimationstart = function() {
-    console.log("started");
-  }
+
   animatedImage.onanimationend = function() {
-    console.log("animation end");
     animatedImage.classList.remove("animate");
     nextImage = Math.floor(Math.random() * 10 / 2);
     animatedImage.setAttribute("src", images[nextImage]);
