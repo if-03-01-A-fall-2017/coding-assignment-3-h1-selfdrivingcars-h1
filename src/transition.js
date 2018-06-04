@@ -2,9 +2,11 @@ var images = ["vorrangGeben.jpg", "stopSign.png", "slower.jpg", "ampel.jpg", "ac
 var animatedImage = document.getElementsByTagName('img')[0];
 var nextImage = Math.floor(Math.random() * images.length);
 var points = 0;
+let pause = 1000;
+let isClicked = false;
 var date = new Date();
 
-window.onload = function(){
+window.onload = function() {
   let firstButton = document.getElementById("f");
   let secondButton = document.getElementById("s");
   let thirdButton = document.getElementById("t");
@@ -18,55 +20,62 @@ window.onload = function(){
   }
 
   animatedImage.onanimationend = function() {
+    if(!isClicked)wrongAnswer();
+    isClicked = false;
     animatedImage.classList.remove("animate");
     nextImage = Math.floor(Math.random() * 10 / 2);
     animatedImage.setAttribute("src", images[nextImage]);
     document.getElementById("p2").innerHTML = points + " points";
-    setTimeout(function(){ animatedImage.classList.add("animate"); }, 3000);
+    if(pause > 100)pause -= 100;
+    setTimeout(function(){ animatedImage.classList.add("animate"); }, pause);
+  }
+
+  let wrongAnswer = function() {
+    alert("Wrong answer!");
+    location.replace("highScorePage.html");
   }
 
   firstButton.onclick = function(){
     if(nextImage === 1 || nextImage === 3){
-          points += 5;
-          animatedImage.classList.remove("animate");
+        isClicked = true;
+        points += 5;
+        animatedImage.onanimationend();
     }
     else{
-      alert("False");
-      location.replace("highScorePage.html");
+      wrongAnswer();
     }
   }
 
   secondButton.onclick = function(){
     if(nextImage === 0 || nextImage === 2 || nextImage === 4){
-          points += 5;
-          animatedImage.classList.remove("animate");
-    }
+        isClicked = true;
+        points += 5;
+        animatedImage.onanimationend();
+      }
     else{
-      alert("False");
-      location.replace("highScorePage.html");
+      wrongAnswer();
     }
   }
 
   thirdButton.onclick = function(){
     if(nextImage === 0 || nextImage === 2 || nextImage === 4){
-          points += 5;
-          animatedImage.classList.remove("animate");
+        isClicked = true;
+        points += 5;
+        animatedImage.onanimationend();
     }
     else{
-      alert("False");
-      location.replace("highScorePage.html");
+      wrongAnswer();
     }
   }
 
   lastButton.onclick = function(){
     if(nextImage === 0 || nextImage === 2 || nextImage === 4){
-          points += 5;
-          animatedImage.classList.remove("animate");
+      isClicked = true;
+      points += 5;
+      animatedImage.onanimationend();
     }
     else{
-      alert("False");
-      location.replace("highScorePage.html");
+      wrongAnswer();
     }
   }
-
 }
