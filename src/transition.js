@@ -32,6 +32,7 @@ window.onload = function() {
 
   let wrongAnswer = function() {
     alert("Wrong answer!");
+    storing();
     location.replace("highScorePage.html");
   }
 
@@ -78,4 +79,14 @@ window.onload = function() {
       wrongAnswer();
     }
   }
+}
+
+let storing = function(){
+  let name = localStorage.getItem("name");
+  let isInLocalStorage = false;
+  for (var i = 0; i < localStorage.length && !isInLocalStorage; i++) {
+    //if(localStorage[i] === name)isInLocalStorage = true;
+    if(localStorage[i] === name)alert("EZ KAFKA");
+  }
+  localStorage.setItem(name, points);
 }
