@@ -83,6 +83,7 @@ window.onload = function() {
 
 let storing = function(){
   let name = localStorage.getItem("name");
+  localStorage.removeItem("name");
   let isInLocalStorage = false;
   for (var i = 0; i < localStorage.length && !isInLocalStorage; i++) {
     //if(localStorage[i] === name)isInLocalStorage = true;
