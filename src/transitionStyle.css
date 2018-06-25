@@ -3,7 +3,10 @@ div img {
     width:69px;
     height: 88px;
 }
-
+html{
+  background-image: url("street.jpg");
+  background-size: cover;
+}
 .animate{
   animation: myfirst 5s;
   animation-iteration-count: 1;
