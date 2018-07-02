@@ -1,0 +1,22 @@
+body{
+  background-image: url("Party.jpg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+h1{
+  font-size: 190px;
+  color: black;
+}
+
+h2{
+  color: black;
+  font-size: 40px;
+}
+
+p{
+  color: grey;
+  font-size: 18px;
+}

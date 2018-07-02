@@ -4,7 +4,7 @@ window.onload = function(){
 
   store.onclick = function(){
     let name = document.getElementById('name');
-    localStorage.setItem(name.id, name.value);
+    localStorage.setItem("name", "name");
   }
 
   clear.onclick = function(){
