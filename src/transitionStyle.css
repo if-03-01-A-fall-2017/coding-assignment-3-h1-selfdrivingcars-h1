@@ -3,7 +3,7 @@ div img {
     width:69px;
     height: 88px;
 }
-html{
+body{
   background-image: url("street.jpg");
   background-size: cover;
 }
