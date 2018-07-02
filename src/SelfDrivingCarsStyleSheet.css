@@ -15,6 +15,23 @@ body{
 table, th, td {
   border:  1px solid black;
 }
+.homePage{
+  background-image: url("model3.jpg");
+  background-size: cover;
+
+}
+.homePageH1{
+  font-size: 90px;
+  color: #4B4E4C;
+}
+.homePageH2{
+  font-size: 34px;
+  color: #4B4E4C;
+}
+.homePageH2White{
+  font-size: 34px;
+  color: white;
+}
 
 h1{
   font-size: 69px;
