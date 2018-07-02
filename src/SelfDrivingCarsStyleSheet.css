@@ -23,14 +23,17 @@ table, th, td {
 .homePageH1{
   font-size: 90px;
   color: #4B4E4C;
+  text-shadow: 0 0 3px white;
 }
 .homePageH2{
   font-size: 34px;
   color: #4B4E4C;
+  text-shadow: 0 0 3px white;
 }
 .homePageH2White{
   font-size: 34px;
   color: white;
+  text-shadow: 0 0 3px black;
 }
 
 h1{
