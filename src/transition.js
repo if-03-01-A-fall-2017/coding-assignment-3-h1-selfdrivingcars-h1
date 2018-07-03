@@ -70,16 +70,6 @@ window.onload = function() {
     }
   }
 
-  lastButton.onclick = function(){
-    if(nextImage === 0 || nextImage === 2 || nextImage === 4){
-      isClicked = true;
-      points += 5;
-      animatedImage.onanimationend();
-    }
-    else{
-      wrongAnswer();
-    }
-  }
 }
 
 let storing = function(){
